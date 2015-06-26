@@ -1,206 +1,501 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-  <title>Invictus F1 Team</title>
 
-  <!-- CSS  -->
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Invictus</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+	<style>
+      ul {         
+          padding:0 0 0 0;
+          margin:0 0 0 0;
+      }
+      ul li {     
+          list-style:none;
+          margin-bottom:25px;           
+      }
+      ul li img {
+          cursor: pointer;
+      }
+      .modal-body {
+          padding:5px !important;
+      }
+      .modal-content {
+          border-radius:0;
+      }
+      .modal-dialog img {
+          text-align:center;
+          margin:0 auto;
+      }
+    .controls{          
+        width:50px;
+        display:block;
+        font-size:11px;
+        padding-top:8px;
+        font-weight:bold;          
+    }
+    .next {
+        float:right;
+        text-align:right;
+    }
+      /*override modal for demo only*/
+      .modal-dialog {
+          max-width:500px;
+          padding-top: 90px;
+      }
+      @media screen and (min-width: 768px){
+          .modal-dialog {
+              width:500px;
+              padding-top: 90px;
+          }          
+      }
+      @media screen and (max-width:1500px){
+          #ads {
+              display:none;
+          }
+      }
+  </style>
+	
+	
 </head>
-<body class="deep-orange">
 
-  <div id="index-banner" class="parallax-container">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <br><br>
-        <h1 class="header center deep-orange-text text-lighten">Invictus</h1>
-        <div class="row center">
-          <h5 class="header col s12 light">The Formula of Dreams</h5>
-        </div>
-        <div class="row center">
-          
-        </div>
-        <br><br>
+<body id="page-top" style="overflow-x:hidden">
 
-      </div>
-    </div>
-    <div class="parallax"><img src="images/team.JPG" alt="Unsplashed background img 2"></div>
-  </div>
-
-
-  <div class="container">
-    <div class="section">
-
-      <!--   Icon Section   -->
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="mdi-social-group"></i></h2>
-            <h5 class="center white-text">The Crew</h5>
-
-            <p class="light white-text">The Invictus team is at this moment attending Formula 1 In Schools from Escola Dr. Joaquim Gomes Ferreira Alves</p>
-          </div>
-          
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="mdi-image-flash-on"></i></h2>
-            <h5 class="center white-text">The Car</h5>
-
-            <p class="light white-text">We designed the car keeping in mind to be lightweight and aerodinamical</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="mdi-action-settings"></i></h2>
-            <h5 class="center white-text">Partnerships</h5>
-
-            <p class="light white-text">Our look into the sponsors was aimed to get resources and actual help in spite of asking for monetary funds.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-        </div>
-      </div>
-    </div>
-    <div class="parallax"><img src="images/car.JPG" alt="Unsplashed background img 2"></div>
-  </div>
-
- <div class="col s12 center" id="car">
-    <div class="container">
-        <h2 class="header col s12 light white-text"> The Prototype </h2>
-        <div class="row">
-            
-<p class="white-text">The main ideas we had at the beggining of the developing were that the car needed to be much lighter than the one from the last competition, smaller and aerodynamically fit to the race.
-We also wanted to bet on lighter axles and wheels.
-</p>
-            
-            
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top"><img id="logo" src="img/logo.png"></a>
             </div>
-    </div>
-</div>
 
-  <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-      </div>
-    </div>
-    <div class="parallax"><img src="images/team2.JPG" alt="Unsplashed background img 2"></div>
-  </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#page-top">Inicio</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#team">A equipa</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#patrocinios">Patrocínios</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#projeto">O projeto</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#galeria">Galeria</a>
+                    </li>
+					<li>
+                        <a class="page-scroll" href="#videos">Videos</a>
+                    </li>
+					<li>
+                        <a class="page-scroll" href="#contact">Contatos</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
 
-<div class="col s12 center" id="team">
-    <div class="container">
-        <h2 class="header col s12 light white-text"> Our Team </h2>
-        <div class="row">
-            <div class="">
-                <div class="card card-avatar">
-                    <div class="waves-effect waves-block waves-light">
-                        <img class="activator" src="#">
-                    </div>
-                    <div class="card-content center-align">
-                        <span class="card-title activator grey-text text-darken-4">Lucas Mendes
-                            <small><em><a class="red-text text-darken-1" href="#">Team Leader and Manufacturing Engineer</a></em></small></span>
-                    </div>
-                </div>
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1>Projeto Invitus</h1>
+                <hr>
+                <p>O projecto invictus bla bla bla...</p>
+				       
+                <a href="#team" class="btn btn-primary btn-xl page-scroll">Sabe mais</a>
             </div>
-            <div class="">
-                <div class="card card-avatar">
-                    <div class="card-content center-align">
-                        <span class="card-title activator grey-text text-darken-4">Gonçalo Pereira
-                            <small><em><a class="red-text text-darken-1" href="#">Graphic Designer</a></em></small>
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="">
-                <div class="card card-avatar">
-                    <div class="card-content center-align">
-                        <span class="card-title activator grey-text text-darken-4">
-                            Rafael Fonseca
-                            <small><em><a class="red-text text-darken-1" href="#">Design Engineer</a></em></small></span>
-                    </div>
-                </div>
-            </div>
-            <div class="">
-                <div class="card card-avatar">
-                    <div class="card-content center-align">
-                        <span class="card-title activator grey-text text-darken-4">
-                            José Pereira
-                            <small><em><a class="red-text text-darken-1" href="#">Resource Manager</a></em></small></span>
-                    </div>
-                </div>
-            </div>
-            <div class="">
-                <div class="card card-avatar">
-                    <div class="card-content center-align">
-                        <span class="card-title activator grey-text text-darken-4">Rui Oliveira
-                            <small><em><a class="red-text text-darken-1" href="#">Social Manager</a></em></small></span>
-                    </div>
+        </div>
+    </header>
+	<!-- A equipa -->
+	<section class="bg-primary" id="team">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">The Crew</h2>
+                    <hr class="light">
+                    <p class="text-faded">The Invictus team is at this moment attending Formula 1 In Schools from Escola Dr. Joaquim Gomes Ferreira Alves.</p>
+                    <a href="#patrocinios" class="btn btn-default btn-xl page-scroll">Quem são os patrocinadores?</a>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-
-  <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center"><font color="#ffffff" size="5">The Nacionals awaits us!</font><br>
+    </section>
+	
+	<section class="no-padding" id="teamfotos">
+		<div class="container-fluid">
+			<div class="row no-gutter">
+				<div class="col-lg-4 col-sm-3">
+					<a href="#portfolio" class="portfolio-box" style="cursor: default">
+						<img src="img/portfolio/1.jpg" class="img-responsive" alt=""> <!-- Mudar a imagem -->
+						<div class="portfolio-box-caption">
+							<div class="portfolio-box-caption-content">
+								<div class="project-category text-faded">
+									Team leader
+								</div>
+								<div class="project-name">
+									Lucas Mendes
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-4 col-sm-3">
+					<a href="#portfolio" class="portfolio-box" style="cursor: default">
+						<img src="img/portfolio/2.jpg" class="img-responsive" alt="">
+						<div class="portfolio-box-caption">
+							<div class="portfolio-box-caption-content">
+								<div class="project-category text-faded">
+									2º lugar
+								</div>
+								<div class="project-name">
+									Bateria telemóvel externa
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-4 col-sm-3">
+					<a href="#portfolio" class="portfolio-box" style="cursor: default">
+						<img src="img/portfolio/3.jpg" class="img-responsive" alt="">
+						<div class="portfolio-box-caption">
+							<div class="portfolio-box-caption-content">
+								<div class="project-category text-faded">
+									3º lugar
+								</div>
+								<div class="project-name">
+									Limpa monitores
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-4 col-sm-3">
+					<a href="#portfolio" class="portfolio-box" style="cursor: default">
+						<img src="img/portfolio/3.jpg" class="img-responsive" alt="">
+						<div class="portfolio-box-caption">
+							<div class="portfolio-box-caption-content">
+								<div class="project-category text-faded">
+									3º lugar
+								</div>
+								<div class="project-name">
+									Limpa monitores
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-4 col-sm-3">
+					<a href="#portfolio" class="portfolio-box" style="cursor: default">
+						<img src="img/portfolio/3.jpg" class="img-responsive" alt="">
+						<div class="portfolio-box-caption">
+							<div class="portfolio-box-caption-content">
+								<div class="project-category text-faded">
+									3º lugar
+								</div>
+								<div class="project-name">
+									Limpa monitores
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-4 col-sm-3">
+					<a href="#portfolio" class="portfolio-box" style="cursor: default">
+						<img src="img/portfolio/3.jpg" class="img-responsive" alt="">
+						<div class="portfolio-box-caption">
+							<div class="portfolio-box-caption-content">
+								<div class="project-category text-faded">
+									3º lugar
+								</div>
+								<div class="project-name">
+									Limpa monitores
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- FIM A equipa -->
+    <section id="patrocinios">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Patrocinadores</h2>
+                    <hr class="primary">
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="parallax"><img src="images/track.JPG" alt="Unsplashed background img 3"></div>
-  </div>
-
-  <footer class="page-footer black">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Status</h5>
-          <p class="grey-text text-lighten-4">We have passed the regionals, walking out with the second place throphy, and looking forward to the nacionals!</p>
-
-
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-6 text-center">
+                    <div class="service-box">
+                        <img src="img/patrocinios/p1.png" class="img-responsive" alt=""> <!--MUDAR IMAGEM -->
+                        <h3>Leroy Merlin</h3>
+                        <p class="text-muted">Irás receber dicas através de diversos meios de comunicação que te ajudarão a encontrar os qrcodes.</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 text-center">
+                    <div class="service-box">
+                        <img src="img/patrocinios/p1.png" class="img-responsive" alt=""> <!--MUDAR IMAGEM -->
+                        <h3>Procura os qrcodes</h3>
+                        <p class="text-muted">Cada qrcode irá permitir que acedas a um conjunto de palavras.</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 text-center">
+                    <div class="service-box">
+                        <img src="img/patrocinios/p1.png" class="img-responsive" alt=""> <!--MUDAR IMAGEM -->
+                        <h3>Recolhe as palavras</h3>
+                        <p class="text-muted">Recolhe todas as palavras e constrói uma frase que demonstre qual a tua expetativa relativamente ao projecto 'Go to Market'.</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 text-center">
+                    <div class="service-box">
+                        <img src="img/patrocinios/p1.png" class="img-responsive" alt=""> <!--MUDAR IMAGEM -->
+                        <h3>Constrói a tua frase</h3>
+                        <p class="text-muted">Submete a tua frase (indicações serão dadas no qrcode final) e ganha prémios!</p>
+                    </div>
+                </div>
+				<div class="col-lg-2 col-md-6 text-center">
+                    <div class="service-box">
+                        <img src="img/patrocinios/p1.png" class="img-responsive" alt=""> <!--MUDAR IMAGEM -->
+                        <h3>Constrói a tua frase</h3>
+                        <p class="text-muted">Submete a tua frase (indicações serão dadas no qrcode final) e ganha prémios!</p>
+                    </div>
+                </div>
+				<div class="col-lg-2 col-md-6 text-center">
+                    <div class="service-box">
+                        <img src="img/patrocinios/p1.png" class="img-responsive" alt=""> <!--MUDAR IMAGEM -->
+                        <h3>Constrói a tua frase</h3>
+                        <p class="text-muted">Submete a tua frase (indicações serão dadas no qrcode final) e ganha prémios!</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Social</h5>
-          <ul>
-            <li><a class="white-text" href="https://www.facebook.com/InvictusF1inSchools">Facebook</a></li>
-            <li><a class="white-text" href="#!">Twitter</a></li>
-            <li><a class="white-text" href="#!">ADD MORE</a></li>
-            <li><a class="white-text" href="#!">and more</a></li>
-          </ul>
+        <div class="col-lg-8 col-lg-offset-2 text-center">
+        	<p></p>
+        	<a href="#projeto" class="btn btn-primary btn-xl page-scroll">Vê o projeto!</a>
+        	<p></p>
+        <div>
+    </section>
+
+	
+	<section class="no-padding" id="projeto">
+		<div class="row">
+			<div class="col-md-12">
+				<img src="img/portfolio/1.jpg" class="img-responsive" alt=""> <!-- Mudar a imagem -->
+			</div>
+		<div>
+	</section>
+	 <aside class="bg-dark">
+        <div class="container text-center">
+            <div class="call-to-action">
+                <h2>Descrição do projeto</h2>
+                <p>Bla bla bla</p>
+				<p></p>
+					<a href="#galeria" class="btn btn-primary btn-xl page-scroll">Ver a galeria</a>
+				<p></p>
+            </div>
         </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="mailto:invictusformula1@gmail.com">Email us</a></li>
-          </ul>
+    </aside>
+	
+	<section class="bg-primary" id="galeria">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Galeria</h2>
+                    <hr class="light">
+                    <p class="text-faded">Veja algumas fotos...</p>
+                    <a href="#videos" class="btn btn-default btn-xl page-scroll">E videos?</a>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
-      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Invictus Team</a>
-      </div>
-    </div>
-  </footer>
+    </section>
+	<section class="no-padding" id="galeriafotos">
+				<ul class="row">
+					<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+						<img class="img-responsive" src="images/photodune-174908-rocking-the-night-away-xs.jpg">
+					</li>
+					<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+						<img class="img-responsive" src="images/photodune-287182-blah-blah-blah-yellow-road-sign-xs.jpg">
+					</li>
+					<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+						<img class="img-responsive" src="images/photodune-460760-colors-xs.jpg">
+					</li>
+					<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+						<img class="img-responsive" src="images/photodune-461673-retro-party-xs.jpg">
+					</li>
+					<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+						<img class="img-responsive" src="images/photodune-514834-touchscreen-technology-xs.jpg">
+					</li>
+					<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+						<img class="img-responsive" src="images/photodune-916206-legal-xs.jpg">
+					</li>
+					<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+						<img class="img-responsive" src="images/photodune-1062948-nature-xs.jpg">
+					</li>
+					<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+						<img class="img-responsive" src="images/photodune-1471528-insant-camera-kid-xs.jpg">
+					</li>
+					<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+						<img class="img-responsive" src="images/photodune-2255072-relaxed-man-xs.jpg">
+					</li>
+					<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+						<img class="img-responsive" src="images/photodune-2360379-colors-xs.jpg">
+					</li>
+					<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+						<img class="img-responsive" src="images/photodune-2360571-jump-xs.jpg">
+					</li>
+					<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+						<img class="img-responsive" src="images/photodune-2361384-culture-for-business-xs.jpg">
+					</li>
+					<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+						<img class="img-responsive" src="images/photodune-2441670-spaghetti-with-tuna-fish-and-parsley-s.jpg">
+					</li>
+					<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+						<img class="img-responsive" src="images/photodune-2943363-budget-xs.jpg">
+					</li>
+					<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+						<img class="img-responsive" src="images/photodune-3444921-street-art-xs.jpg">
+					</li>
+					<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+						<img class="img-responsive" src="images/photodune-3552322-insurance-xs.jpg">
+					</li>
+					<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+						<img class="img-responsive" src="images/photodune-3807845-food-s.jpg">
+					</li>
+					<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+						<img class="img-responsive" src="images/photodune-3835655-down-office-worker-xs.jpg">
+					</li>
+					<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+						<img class="img-responsive" src="images/photodune-4619216-ui-control-knob-regulators-xs.jpg">
+					</li>
+					<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+						<img class="img-responsive" src="images/photodune-5771958-health-xs.jpg">
+					</li>
+					<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+						<img class="img-responsive" src="images/photodune-268693-businesswoman-using-laptop-outdoors-xs.jpg">
+					</li>
+					<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+						<img class="img-responsive" src="images/photodune-352207-search-of-code-s.jpg">
+					</li>
+					<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+						<img class="img-responsive" src="images/photodune-247190-secret-email-xs.jpg">
+					</li>
+					<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+						<img class="img-responsive" src="images/photodune-682990-online-search-xs.jpg">
+					</li>
+				  </ul>             
+			
+			 
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+				<div class="modal-content">         
+				  <div class="modal-body">                
+				  </div>
+				</div><!-- /.modal-content -->
+			  </div><!-- /.modal-dialog -->
+			</div><!-- /.modal -->
+	</section>
 
+	<section class="bg-primary" id="videos">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Videos</h2>
+                    <hr class="light">
+                    <p class="text-faded">Visita o nosso canal no youtube...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+	<section class="no-padding" id="videosyoutube">
+				<div class="row">
+					<ul>
+						<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+							<a href="https://www.youtube.com/watch?v=kaZoyOU0D40" target="blank"><img class="img-responsive video" src="images/photodune-174908-rocking-the-night-away-xs.jpg"></a>
+						</li>
+						<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+							<a href="https://www.youtube.com/watch?v=kaZoyOU0D40" target="blank"><img class="img-responsive video" src="images/photodune-174908-rocking-the-night-away-xs.jpg"></a>
+						</li>
+						<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+							<a href="https://www.youtube.com/watch?v=kaZoyOU0D40" target="blank"><img class="img-responsive video" src="images/photodune-174908-rocking-the-night-away-xs.jpg"></a>
+						</li>
+					 </ul>             
+				</div>
+	</section>		
+	
 
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Entra em contacto connosco!</h2>
+                    <hr class="primary">
+                    <p>Tens alguma questão ou comentário? Entra em contacto connosco!</p>
+                    <p>
+                    <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i></p>
+                    <p><a href="mailto:invictusformula1@gmail.com">invictusformula1@gmail.com</a></p>
+					<p>
+                    <i class="fa fa-facebook-square fa-3x wow bounceIn" data-wow-delay=".1s"></i></p>
+                    <p>facevv</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  </body>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/wow.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/creative.js"></script>
+	<script src="js/photo-gallery.js"></script>
+	
+</body>
+
 </html>
